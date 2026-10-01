@@ -15,8 +15,8 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50">
-      <div className="mx-auto flex max-w-6xl items-center justify-center px-6 py-5">
-        <ul className="flex items-center gap-1 rounded-full border border-[#C2B280]/20 bg-[#3a251a]/30 p-1.5 backdrop-blur-xl shadow-lg shadow-black/20">
+      <div className="mx-auto flex max-w-6xl items-center justify-center px-2 py-3 sm:px-6 sm:py-5">
+        <ul className="flex items-center gap-0.5 rounded-full border border-[#C2B280]/20 bg-[#3a251a]/30 p-1 backdrop-blur-xl shadow-lg shadow-black/20 sm:gap-1 sm:p-1.5">
           {links.map((link) => {
             const isActive = pathname === link.href;
 
@@ -24,7 +24,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`group relative inline-flex items-center rounded-full px-5 py-2 text-[11px] font-medium uppercase tracking-[0.2em] transition-all duration-300 ${
+                  className={`group relative inline-flex items-center rounded-full px-2.5 py-1.5 text-[9px] font-medium uppercase tracking-[0.12em] transition-all duration-300 sm:px-5 sm:py-2 sm:text-[11px] sm:tracking-[0.2em] ${
                     isActive
                       ? "bg-[#C2B280]/90 text-[#3a251a] shadow-md shadow-black/30"
                       : "text-[#E4CDAF]/70 hover:bg-[#C2B280]/10 hover:text-[#E4CDAF]"
@@ -33,7 +33,7 @@ export default function Navbar() {
                   {link.label}
 
                   {isActive && (
-                    <span className="ml-2 h-1 w-1 rounded-full bg-[#3a251a]" />
+                    <span className="ml-1.5 h-1 w-1 rounded-full bg-[#3a251a] sm:ml-2" />
                   )}
                 </Link>
               </li>
