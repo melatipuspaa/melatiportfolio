@@ -440,6 +440,10 @@ function AllDesigns({
             <br />
             <span className="text-[#C2B280]">chaotic bunch.</span>
           </h3>
+
+          <p className="text-[8px] uppercase tracking-[0.28em] text-[#C2B280] sm:text-[9px] sm:tracking-[0.35em]">
+            Go on, click one (ㅅ´ ˘ `)
+          </p>
         </div>
 
         <div className={`grid gap-1.5 sm:gap-3 md:gap-4 ${gridCols}`}>
