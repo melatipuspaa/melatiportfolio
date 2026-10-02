@@ -119,7 +119,7 @@ export default function About() {
 
               <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-[#5B3A29]/80 to-transparent p-6 pt-20">
                 <p className="text-[9px] uppercase tracking-[0.3em] text-[#E4CDAF]/70">
-                  Singer / Designer / Coffee lover
+                  Sleep is a myth, money is real
                 </p>
               </div>
             </div>
