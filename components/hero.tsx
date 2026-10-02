@@ -29,7 +29,7 @@ export default function Hero() {
         <span className="h-px w-10 bg-[#C2B280]/50" />
 
         <span className="text-[10px] font-semibold uppercase tracking-[0.4em] text-[#C2B280]/80">
-          Mel's Portfolio
+          Mel&apos;s Portfolio
         </span>
 
         <span className="h-px w-10 bg-[#C2B280]/50" />
@@ -96,8 +96,27 @@ export default function Hero() {
             </span>
           </h1>
 
+          {/* ⭐ FLOATING IMAGE — Bawah headline, muncul di mobile juga */}
+          <div className="relative mx-auto mt-6 flex items-center justify-center sm:mt-8">
+            <img
+              src="/image/copi.png"
+              alt=""
+              className="
+                pointer-events-none
+                w-24
+                rotate-[-6deg]
+                opacity-90
+                animate-[float_5s_ease-in-out_infinite]
+                sm:w-28
+                md:w-32
+                lg:w-40
+                drop-shadow-[0_10px_30px_rgba(0,0,0,0.3)]
+              "
+            />
+          </div>
+
           {/* Decorative underline */}
-          <div className="mx-auto mt-10 flex items-center justify-center gap-3">
+          <div className="mx-auto mt-8 flex items-center justify-center gap-3 sm:mt-10">
             <span className="h-px w-12 bg-[#C2B280]/30 md:w-16" />
 
             <span className="h-1.5 w-1.5 rounded-full bg-[#C2B280]" />
