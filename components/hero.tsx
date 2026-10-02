@@ -24,9 +24,7 @@ export default function Hero() {
 
   return (
     <section className="relative mx-auto flex min-h-[calc(100vh-6rem)] max-w-7xl flex-col justify-center overflow-hidden px-6 py-20 md:px-10 lg:px-16">
-      {/* ═══════════════════════════════════
-          TOP LABEL
-      ═══════════════════════════════════ */}
+      {/* Top Label */}
       <div className="mb-14 flex items-center justify-center gap-4 animate-fade-in">
         <span className="h-px w-10 bg-[#C2B280]/50" />
 
@@ -37,9 +35,7 @@ export default function Hero() {
         <span className="h-px w-10 bg-[#C2B280]/50" />
       </div>
 
-      {/* ═══════════════════════════════════
-          HERO TITLE + SIDE IMAGES
-      ═══════════════════════════════════ */}
+      {/* Main Content */}
       <div className="relative flex items-center justify-center">
         {/* ── Left floating image ───────────── */}
         <img
@@ -111,9 +107,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* ═══════════════════════════════════
-          SHORT DESCRIPTION
-      ═══════════════════════════════════ */}
+      {/* Short Description */}
       <div className="mx-auto mt-10 max-w-xl text-center animate-fade-in">
         <p className="text-sm leading-7 text-[#E4CDAF]/70 md:text-base">
           Fan edits, random design experiments, and things I made for
@@ -122,9 +116,7 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* ═══════════════════════════════════
-          CTA BUTTONS
-      ═══════════════════════════════════ */}
+      {/* CTA BUTTONS */}
       <div className="mt-12 flex flex-wrap items-center justify-center gap-4 animate-fade-in">
         <Link
           href="/projects"
@@ -145,9 +137,7 @@ export default function Hero() {
         </Link>
       </div>
 
-      {/* ═══════════════════════════════════
-          HIGHLIGHTS
-      ═══════════════════════════════════ */}
+      {/* Highlights */}
       <div className="mt-24 grid grid-cols-1 gap-4 sm:grid-cols-3 animate-fade-in">
         {highlights.map((h) => (
           <div
@@ -184,9 +174,7 @@ export default function Hero() {
         ))}
       </div>
 
-      {/* ═══════════════════════════════════
-          BOTTOM HINT
-      ═══════════════════════════════════ */}
+      {/* Bottom Hint */}
       <div className="mt-16 flex items-center justify-center gap-3 text-[9px] uppercase tracking-[0.35em] text-[#E4CDAF]/30 animate-fade-in">
       </div>
     </section>

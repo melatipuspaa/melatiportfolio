@@ -24,7 +24,6 @@ export default function RootLayout({
           }}
         />
 
-        {/* Dark overlay biar teks kebaca */}
         <div className="fixed inset-0 -z-10 bg-[#5B3A29]/75" />
 
         <Navbar />

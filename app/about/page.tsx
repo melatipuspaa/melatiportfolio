@@ -22,8 +22,7 @@ export default function About() {
 
       <section className="relative mx-auto max-w-6xl px-6 py-8 md:px-10 lg:px-16 lg:py-10">
 
-              {/* ⭐ Floating cute images — FIXED position, di luar container text
-          Muncul hanya di layar lebar (2xl: 1536px+) biar tidak nutupin konten */}
+              {/* Floating cute images */}
       <img
         src="/image/1f418962a2bd325f69c5135da202f54e-Photoroom.png"
         alt=""
@@ -309,33 +308,26 @@ export default function About() {
         </section>
 
         {/* Personal Note */}
-        <section className="border-t border-[#E4CDAF]/15 py-20 md:py-28">
-          <div className="mx-auto max-w-3xl text-center">
-            <span className="font-serif text-5xl italic text-[#C2B280]/60">
-              &ldquo;
-            </span>
+<section className="border-t border-[#E4CDAF]/15 py-20 md:py-28">
+  <div className="mx-auto max-w-3xl text-center">
+    <span className="font-serif text-5xl italic text-[#C2B280]/60">
+      &ldquo;
+    </span>
 
-            <p className="mt-2 font-serif text-3xl leading-relaxed text-[#F3E8D6] md:text-5xl">
-              Growing  
-              <span className="italic text-[#C2B280]">
-                {" "}slowly,
-              </span>
-              <p className="mt-2 font-serif text-3xl leading-relaxed text-[#F3E8D6] md:text-5xl">
-              learning
-              <span className="italic text-[#C2B280]">
-                {" "}loudly.
-              </span>
-            </p>
-            </p>
+    <p className="mt-2 font-serif text-3xl leading-relaxed text-[#F3E8D6] md:text-5xl">
+      Learning slowly,
+      <br />
+      <span className="italic text-[#C2B280]">growing loudly.</span>
+    </p>
 
-            <p className="mx-auto mt-8 max-w-xl text-sm leading-7 text-[#E4CDAF]/55">
-              I'm always open to learning, experimenting, meeting creative
-              people, and taking on projects that push me somewhere new.
-              If there's something I haven't tried yet, chances are
-              I'll probably want to try it.
-            </p>
-          </div>
-        </section>
+    <p className="mx-auto mt-8 max-w-xl text-sm leading-7 text-[#E4CDAF]/55">
+      I'm always open to learning, experimenting, meeting creative
+      people, and taking on projects that push me somewhere new. If
+      there's something I haven't tried yet, chances are I'll
+      want to try it.
+    </p>
+  </div>
+</section>
 
       </section>
     </main>

@@ -23,8 +23,7 @@ export default function Projects() {
 
       <section className="relative mx-auto flex min-h-screen max-w-6xl flex-col px-6 py-10 md:px-10 lg:px-16 lg:py-14">
         
-              {/* ⭐ Floating cute images — FIXED position, di luar container text
-          Muncul hanya di layar lebar (2xl: 1536px+) biar tidak nutupin konten */}
+              {/* Floating cute images */}
       <img
         src="/image/6fd60530cacb2cb0bcd010d46c64787e-Photoroom.png"
         alt=""

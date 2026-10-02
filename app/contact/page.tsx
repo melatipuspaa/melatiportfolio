@@ -42,7 +42,7 @@ export default function Contact() {
         }}
       />
 
-      {/* ⭐ Floating cute images — hanya muncul di layar lebar biar tidak nutupin konten */}
+      {/* Floating cute images */}
       <img
         src="/image/7193c0cd996787268b1c5e09c6e8696b-Photoroom.png"
         alt=""
@@ -79,7 +79,7 @@ export default function Contact() {
         "
       />
 
-      {/* ⭐ Konten utama */}
+      {/* Main Content */}
       <section className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-8 sm:px-6 sm:py-10 md:px-10 lg:px-16 lg:py-14">
         {/* ── Split Hero + Contact ──────────────── */}
         <div className="mt-20 grid flex-1 grid-cols-1 gap-12 sm:mt-24 md:mt-24 md:grid-cols-12 md:gap-10">
@@ -93,7 +93,7 @@ export default function Contact() {
             </div>
 
             <h1 className="text-4xl font-medium leading-[0.95] tracking-[-0.03em] text-[#E4CDAF] sm:text-5xl md:text-6xl lg:text-7xl">
-              Let&apos;s keep
+              Let's keep
               <br />
               <span className="font-serif italic text-[#C2B280]">
                 in touch.
@@ -101,7 +101,7 @@ export default function Contact() {
             </h1>
 
             <p className="mt-6 max-w-md text-sm leading-7 text-[#E4CDAF]/70 sm:mt-8 md:text-base">
-              Whether it&apos;s a creative opportunity, collaboration, or
+              Whether it's a creative opportunity, collaboration, or
               just want to say hello — you can find me through the contacts
               on the right.
             </p>
