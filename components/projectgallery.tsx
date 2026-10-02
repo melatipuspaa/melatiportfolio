@@ -98,32 +98,33 @@ export default function ProjectGallery({ project, onClose }: Props) {
         {/* Close — fixed */}
         <button
           onClick={onClose}
-          className="fixed right-4 top-4 z-[60] flex h-10 w-10 items-center justify-center rounded-full border border-[#C2B280]/20 bg-[#15100d]/80 text-sm text-[#E4CDAF] backdrop-blur-xl transition-all duration-300 hover:rotate-90 hover:border-[#C2B280]/60 hover:bg-[#C2B280]/10 sm:right-6 sm:top-6 sm:h-11 sm:w-11"
+          className="fixed right-3 top-3 z-[60] flex h-9 w-9 items-center justify-center rounded-full border border-[#C2B280]/20 bg-[#15100d]/80 text-sm text-[#E4CDAF] backdrop-blur-xl transition-all duration-300 hover:rotate-90 hover:border-[#C2B280]/60 hover:bg-[#C2B280]/10 sm:right-6 sm:top-6 sm:h-11 sm:w-11"
           aria-label="Close"
         >
           ✕
         </button>
 
+        {/* ⭐ top-align di mobile, center di desktop */}
         <div
-          className="relative mx-auto flex min-h-full max-w-[1600px] items-center px-4 py-16 sm:px-6 sm:py-20 md:px-10 lg:px-16"
+          className="relative mx-auto flex min-h-full max-w-[1600px] items-start px-4 pb-10 pt-14 sm:items-center sm:px-6 sm:py-20 md:px-10 lg:px-16"
           onClick={(e) => e.stopPropagation()}
         >
-          <div className="grid w-full items-center gap-10 md:gap-12 lg:grid-cols-[1fr_360px] xl:grid-cols-[1fr_420px] xl:gap-20">
+          <div className="grid w-full items-start gap-8 sm:items-center sm:gap-10 md:gap-12 lg:grid-cols-[1fr_360px] xl:grid-cols-[1fr_420px] xl:gap-20">
             {/* =================================================
                 LEFT — INFINITE SLIDER
             ================================================= */}
             <div className="min-w-0">
               {/* Label */}
-              <div className="mb-6 flex items-end justify-between sm:mb-7">
+              <div className="mb-4 flex items-end justify-between sm:mb-7">
                 <div>
-                  <div className="mb-3 flex items-center gap-3">
-                    <span className="h-px w-8 bg-[#C2B280]" />
-                    <span className="text-[9px] font-semibold uppercase tracking-[0.3em] text-[#C2B280] sm:tracking-[0.35em]">
+                  <div className="mb-2 flex items-center gap-3 sm:mb-3">
+                    <span className="h-px w-6 bg-[#C2B280] sm:w-8" />
+                    <span className="text-[8px] font-semibold uppercase tracking-[0.28em] text-[#C2B280] sm:text-[9px] sm:tracking-[0.35em]">
                       Selected works
                     </span>
                   </div>
 
-                  <p className="text-[10px] uppercase tracking-[0.25em] text-[#E4CDAF]/25">
+                  <p className="text-[9px] uppercase tracking-[0.2em] text-[#E4CDAF]/25 sm:text-[10px] sm:tracking-[0.25em]">
                     A moving collection
                   </p>
                 </div>
@@ -135,11 +136,11 @@ export default function ProjectGallery({ project, onClose }: Props) {
 
               {/* Slider viewport */}
               <div className="relative -mx-4 w-[calc(100%+2rem)] overflow-hidden sm:mx-0 sm:w-full">
-                <div className="pointer-events-none absolute bottom-0 left-0 top-0 z-20 w-10 bg-linear-to-r from-[#0b0806] to-transparent sm:w-16 md:w-28" />
-                <div className="pointer-events-none absolute bottom-0 right-0 top-0 z-20 w-10 bg-linear-to-l from-[#0b0806] to-transparent sm:w-16 md:w-28" />
+                <div className="pointer-events-none absolute bottom-0 left-0 top-0 z-20 w-8 bg-linear-to-r from-[#0b0806] to-transparent sm:w-16 md:w-28" />
+                <div className="pointer-events-none absolute bottom-0 right-0 top-0 z-20 w-8 bg-linear-to-l from-[#0b0806] to-transparent sm:w-16 md:w-28" />
 
                 {/* Infinite track */}
-                <div className="gallery-marquee group flex w-max gap-3 py-6 sm:gap-4 sm:py-8 md:gap-5">
+                <div className="gallery-marquee group flex w-max gap-2.5 py-4 sm:gap-4 sm:py-8 md:gap-5">
                   {gallery.map((item, index) => (
                     <GalleryCard
                       key={`first-${index}`}
@@ -163,10 +164,10 @@ export default function ProjectGallery({ project, onClose }: Props) {
               </div>
 
               {/* Bottom information */}
-              <div className="mt-5 flex items-center justify-between border-t border-[#C2B280]/10 pt-5">
-                <div className="flex items-center gap-3">
+              <div className="mt-4 flex items-center justify-between border-t border-[#C2B280]/10 pt-4 sm:mt-5 sm:pt-5">
+                <div className="flex items-center gap-2 sm:gap-3">
                   <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#C2B280]" />
-                  <span className="text-[8px] uppercase tracking-[0.3em] text-[#E4CDAF]/30">
+                  <span className="text-[7px] uppercase tracking-[0.25em] text-[#E4CDAF]/30 sm:text-[8px] sm:tracking-[0.3em]">
                     Auto scrolling
                   </span>
                 </div>
@@ -183,41 +184,41 @@ export default function ProjectGallery({ project, onClose }: Props) {
             <aside className="relative">
               <div className="relative">
                 {/* Category */}
-                <div className="mb-5 flex items-center gap-3 sm:mb-7">
-                  <span className="h-px w-7 bg-[#C2B280]" />
-                  <span className="text-[9px] font-semibold uppercase tracking-[0.25em] text-[#C2B280] sm:tracking-[0.3em]">
+                <div className="mb-4 flex items-center gap-3 sm:mb-7">
+                  <span className="h-px w-5 bg-[#C2B280] sm:w-7" />
+                  <span className="text-[8px] font-semibold uppercase tracking-[0.22em] text-[#C2B280] sm:text-[9px] sm:tracking-[0.3em]">
                     {project.tech.join(" · ")}
                   </span>
                 </div>
 
                 {/* Title */}
-                <h2 className="max-w-sm font-serif text-3xl italic leading-[0.95] tracking-[-0.03em] text-[#F3E8D6] sm:text-4xl md:text-5xl lg:text-6xl">
+                <h2 className="max-w-sm font-serif text-2xl italic leading-[1] tracking-[-0.02em] text-[#F3E8D6] sm:text-4xl md:text-5xl lg:text-6xl">
                   {project.title}
                 </h2>
 
                 {/* Description */}
-                <p className="mt-5 text-sm leading-7 text-[#E4CDAF]/60 sm:mt-8 md:text-base">
+                <p className="mt-4 text-[13px] leading-6 text-[#E4CDAF]/60 sm:mt-8 sm:text-sm sm:leading-7 md:text-base">
                   {project.description}
                 </p>
 
                 {/* Divider */}
-                <div className="my-6 h-px w-full bg-[#C2B280]/10 sm:my-8" />
+                <div className="my-5 h-px w-full bg-[#C2B280]/10 sm:my-8" />
 
                 {/* View all — tetap keliatan di mobile */}
                 <button
                   onClick={() => setShowAll(true)}
-                  className="group flex w-full items-center justify-between border border-[#C2B280]/25 px-5 py-4 transition-all duration-500 hover:border-[#C2B280]/60 hover:bg-[#C2B280]/5"
+                  className="group flex w-full items-center justify-between border border-[#C2B280]/25 px-4 py-3.5 transition-all duration-500 hover:border-[#C2B280]/60 hover:bg-[#C2B280]/5 sm:px-5 sm:py-4"
                 >
-                  <span className="text-[9px] font-semibold uppercase tracking-[0.25em] text-[#E4CDAF] sm:tracking-[0.3em]">
+                  <span className="text-[8px] font-semibold uppercase tracking-[0.22em] text-[#E4CDAF] sm:text-[9px] sm:tracking-[0.3em]">
                     View all project
                   </span>
 
-                  <span className="text-lg text-[#C2B280] transition-transform duration-300 group-hover:translate-x-2">
+                  <span className="text-base text-[#C2B280] transition-transform duration-300 group-hover:translate-x-2 sm:text-lg">
                     →
                   </span>
                 </button>
 
-                <p className="mt-5 text-[8px] uppercase tracking-[0.25em] text-[#E4CDAF]/20">
+                <p className="mt-4 text-[7px] uppercase tracking-[0.22em] text-[#E4CDAF]/20 sm:mt-5 sm:text-[8px] sm:tracking-[0.25em]">
                   Click a visual to inspect it
                 </p>
               </div>
@@ -290,26 +291,26 @@ export default function ProjectGallery({ project, onClose }: Props) {
 function getCardSize(aspect: string) {
   // 16:9 landscape
   if (aspect === "16/9") {
-    return "h-[140px] w-[250px] sm:h-[180px] sm:w-[320px] md:h-[220px] md:w-[390px] lg:h-[250px] lg:w-[445px]";
+    return "h-[100px] w-[178px] sm:h-[180px] sm:w-[320px] md:h-[220px] md:w-[390px] lg:h-[250px] lg:w-[445px]";
   }
 
   // 9:16 portrait panjang
   if (aspect === "9/16") {
-    return "h-[280px] w-[158px] sm:h-[340px] sm:w-[190px] md:h-[400px] md:w-[225px] lg:h-[480px] lg:w-[270px]";
+    return "h-[200px] w-[113px] sm:h-[340px] sm:w-[190px] md:h-[400px] md:w-[225px] lg:h-[480px] lg:w-[270px]";
   }
 
   // 1:1 square
   if (aspect === "1/1") {
-    return "h-[180px] w-[180px] sm:h-[230px] sm:w-[230px] md:h-[280px] md:w-[280px] lg:h-[320px] lg:w-[320px]";
+    return "h-[130px] w-[130px] sm:h-[230px] sm:w-[230px] md:h-[280px] md:w-[280px] lg:h-[320px] lg:w-[320px]";
   }
 
   // 3:2 landscape klasik
   if (aspect === "3/2") {
-    return "h-[150px] w-[225px] sm:h-[190px] sm:w-[285px] md:h-[240px] md:w-[360px] lg:h-[270px] lg:w-[405px]";
+    return "h-[110px] w-[165px] sm:h-[190px] sm:w-[285px] md:h-[240px] md:w-[360px] lg:h-[270px] lg:w-[405px]";
   }
 
   // 4/5 default
-  return "h-[220px] w-[176px] sm:h-[270px] sm:w-[216px] md:h-[330px] md:w-[264px] lg:h-[390px] lg:w-[312px]";
+  return "h-[160px] w-[128px] sm:h-[270px] sm:w-[216px] md:h-[330px] md:w-[264px] lg:h-[390px] lg:w-[312px]";
 }
 
 /* =====================================================
@@ -353,15 +354,15 @@ function GalleryCard({
 
       <div className="absolute inset-0 border border-[#C2B280]/10 transition-colors duration-500 group-hover:border-[#C2B280]/50" />
 
-      <div className="absolute left-3 top-3 sm:left-5 sm:top-5">
-        <span className="font-mono text-[9px] tracking-[0.25em] text-[#F3E8D6]/60">
+      <div className="absolute left-2 top-2 sm:left-5 sm:top-5">
+        <span className="font-mono text-[8px] tracking-[0.25em] text-[#F3E8D6]/60 sm:text-[9px]">
           {String(index + 1).padStart(2, "0")}
         </span>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-5">
+      <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-5">
         <div className="flex items-end justify-between gap-4">
-          <span className="text-[8px] uppercase tracking-[0.25em] text-[#E4CDAF]/50">
+          <span className="text-[7px] uppercase tracking-[0.2em] text-[#E4CDAF]/50 sm:text-[8px] sm:tracking-[0.25em]">
             {item.type === "video" ? "Motion" : "Visual"}
           </span>
 
@@ -389,7 +390,8 @@ function AllDesigns({
   onClose: () => void;
   onOpen: (index: number) => void;
 }) {
-  const gridCols = "grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4";
+  const gridCols =
+    "grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4";
 
   const cellAspect =
     projectAspect === "16/9"
@@ -406,20 +408,20 @@ function AllDesigns({
     <div className="fixed inset-0 z-[200] overflow-y-auto bg-[#0a0806] animate-fade-in">
       {/* Header */}
       <header className="sticky top-0 z-30 border-b border-[#C2B280]/10 bg-[#0a0806]/85 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-[1500px] items-center justify-between px-4 py-4 md:px-10 md:py-5 lg:px-16">
+        <div className="mx-auto flex max-w-[1500px] items-center justify-between px-4 py-3 md:px-10 md:py-5 lg:px-16">
           <div className="min-w-0">
-            <p className="truncate font-serif text-lg italic text-[#F3E8D6] sm:text-xl">
+            <p className="truncate font-serif text-base italic text-[#F3E8D6] sm:text-xl">
               {project.title}
             </p>
 
-            <p className="mt-1 text-[8px] uppercase tracking-[0.25em] text-[#E4CDAF]/30">
+            <p className="mt-0.5 text-[7px] uppercase tracking-[0.22em] text-[#E4CDAF]/30 sm:mt-1 sm:text-[8px] sm:tracking-[0.25em]">
               {project.gallery.length} works
             </p>
           </div>
 
           <button
             onClick={onClose}
-            className="ml-4 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full border border-[#C2B280]/20 text-sm text-[#E4CDAF] transition-all duration-300 hover:rotate-90 hover:border-[#C2B280]/60 sm:h-10 sm:w-10"
+            className="ml-3 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-[#C2B280]/20 text-xs text-[#E4CDAF] transition-all duration-300 hover:rotate-90 hover:border-[#C2B280]/60 sm:h-10 sm:w-10 sm:text-sm"
           >
             ✕
           </button>
@@ -427,20 +429,20 @@ function AllDesigns({
       </header>
 
       {/* Collection */}
-      <main className="mx-auto max-w-[1500px] px-4 py-8 md:px-10 md:py-12 lg:px-16 lg:py-20">
-        <div className="mb-8 max-w-xl md:mb-12">
-          <p className="text-[9px] uppercase tracking-[0.3em] text-[#C2B280] sm:tracking-[0.35em]">
+      <main className="mx-auto max-w-[1500px] px-3 py-6 md:px-10 md:py-12 lg:px-16 lg:py-20">
+        <div className="mb-6 max-w-xl md:mb-12">
+          <p className="text-[8px] uppercase tracking-[0.28em] text-[#C2B280] sm:text-[9px] sm:tracking-[0.35em]">
             The collection
           </p>
 
-          <h3 className="mt-3 font-serif text-3xl italic text-[#F3E8D6] sm:text-4xl md:text-5xl">
+          <h3 className="mt-2 font-serif text-2xl italic text-[#F3E8D6] sm:mt-3 sm:text-4xl md:text-5xl">
             The whole
             <br />
             <span className="text-[#C2B280]">chaotic bunch.</span>
           </h3>
         </div>
 
-        <div className={`grid gap-2 sm:gap-3 md:gap-4 ${gridCols}`}>
+        <div className={`grid gap-1.5 sm:gap-3 md:gap-4 ${gridCols}`}>
           {project.gallery.map((item, index) => {
             const thumbSrc =
               item.type === "video" ? item.poster || "" : item.src;
@@ -468,13 +470,13 @@ function AllDesigns({
 
                 <div className="absolute inset-0 bg-linear-to-t from-[#0a0806]/80 via-transparent to-transparent opacity-60" />
 
-                <div className="absolute bottom-2 left-2 sm:bottom-3 sm:left-3">
-                  <span className="font-mono text-[9px] tracking-[0.3em] text-[#E4CDAF]/70">
+                <div className="absolute bottom-1.5 left-1.5 sm:bottom-3 sm:left-3">
+                  <span className="font-mono text-[8px] tracking-[0.25em] text-[#E4CDAF]/70 sm:text-[9px]">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                 </div>
 
-                <div className="absolute right-2 top-2 flex h-6 w-6 translate-y-2 items-center justify-center rounded-full border border-[#F3E8D6]/20 bg-[#0a0806]/40 text-[10px] text-[#F3E8D6] opacity-0 backdrop-blur-md transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 sm:right-3 sm:top-3 sm:h-7 sm:w-7 sm:text-xs">
+                <div className="absolute right-1.5 top-1.5 flex h-5 w-5 translate-y-2 items-center justify-center rounded-full border border-[#F3E8D6]/20 bg-[#0a0806]/40 text-[9px] text-[#F3E8D6] opacity-0 backdrop-blur-md transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 sm:right-3 sm:top-3 sm:h-7 sm:w-7 sm:text-xs">
                   ↗
                 </div>
               </button>
@@ -524,12 +526,12 @@ function Lightbox({
       onClick={onClose}
     >
       {/* Top */}
-      <div className="flex items-center justify-between px-4 py-4 sm:px-6 sm:py-5 md:px-10">
-        <div className="min-w-0 pr-4">
-          <p className="truncate font-serif text-base italic text-[#F3E8D6] sm:text-lg">
+      <div className="flex items-center justify-between px-3 py-3 sm:px-6 sm:py-5 md:px-10">
+        <div className="min-w-0 pr-3">
+          <p className="truncate font-serif text-sm italic text-[#F3E8D6] sm:text-lg">
             {title}
           </p>
-          <p className="mt-1 font-mono text-[9px] tracking-[0.3em] text-[#C2B280]">
+          <p className="mt-1 font-mono text-[8px] tracking-[0.28em] text-[#C2B280] sm:text-[9px] sm:tracking-[0.3em]">
             {String(index + 1).padStart(2, "0")} /{" "}
             {String(total).padStart(2, "0")}
           </p>
@@ -537,7 +539,7 @@ function Lightbox({
 
         <button
           onClick={onClose}
-          className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full border border-[#C2B280]/20 text-sm text-[#E4CDAF] transition-all hover:rotate-90 sm:h-10 sm:w-10"
+          className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-[#C2B280]/20 text-xs text-[#E4CDAF] transition-all hover:rotate-90 sm:h-10 sm:w-10 sm:text-sm"
         >
           ✕
         </button>
@@ -545,22 +547,22 @@ function Lightbox({
 
       {/* Main */}
       <div
-        className="relative flex flex-1 items-center justify-center px-4 sm:px-12 md:px-16"
+        className="relative flex flex-1 items-center justify-center px-2 sm:px-12 md:px-16"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={goPrev}
-          className="absolute left-2 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#C2B280]/20 bg-[#15100d]/80 text-lg text-[#E4CDAF] backdrop-blur-md transition-all hover:border-[#C2B280]/60 sm:left-4 sm:h-12 sm:w-12 sm:text-xl md:left-5"
+          className="absolute left-1 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-[#C2B280]/20 bg-[#15100d]/80 text-base text-[#E4CDAF] backdrop-blur-md transition-all hover:border-[#C2B280]/60 sm:left-4 sm:h-12 sm:w-12 sm:text-xl md:left-5"
         >
           ←
         </button>
 
-        <div className="flex max-h-[70vh] max-w-full items-center justify-center sm:max-h-[75vh] md:max-h-[80vh]">
+        <div className="flex max-h-[65vh] max-w-full items-center justify-center sm:max-h-[75vh] md:max-h-[80vh]">
           {current.type === "image" ? (
             <img
               src={current.src}
               alt={`${title} ${index + 1}`}
-              className="max-h-[70vh] max-w-full object-contain sm:max-h-[75vh] md:max-h-[80vh]"
+              className="max-h-[65vh] max-w-full object-contain sm:max-h-[75vh] md:max-h-[80vh]"
             />
           ) : (
             <video
@@ -570,22 +572,22 @@ function Lightbox({
               autoPlay
               muted
               playsInline
-              className="max-h-[70vh] max-w-full sm:max-h-[75vh] md:max-h-[80vh]"
+              className="max-h-[65vh] max-w-full sm:max-h-[75vh] md:max-h-[80vh]"
             />
           )}
         </div>
 
         <button
           onClick={goNext}
-          className="absolute right-2 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[#C2B280]/20 bg-[#15100d]/80 text-lg text-[#E4CDAF] backdrop-blur-md transition-all hover:border-[#C2B280]/60 sm:right-4 sm:h-12 sm:w-12 sm:text-xl md:right-5"
+          className="absolute right-1 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-[#C2B280]/20 bg-[#15100d]/80 text-base text-[#E4CDAF] backdrop-blur-md transition-all hover:border-[#C2B280]/60 sm:right-4 sm:h-12 sm:w-12 sm:text-xl md:right-5"
         >
           →
         </button>
       </div>
 
       {/* Thumbnail strip */}
-      <div className="overflow-x-auto px-4 pb-4 sm:px-6 sm:pb-6">
-        <div className="mx-auto flex w-max gap-2">
+      <div className="overflow-x-auto px-3 pb-3 sm:px-6 sm:pb-6">
+        <div className="mx-auto flex w-max gap-1.5 sm:gap-2">
           {gallery.map((item, i) => {
             const thumb =
               item.type === "video" ? item.poster || "" : item.src;
@@ -597,7 +599,7 @@ function Lightbox({
                   e.stopPropagation();
                   setIndex(i);
                 }}
-                className={`h-11 w-11 flex-shrink-0 overflow-hidden border transition-all sm:h-14 sm:w-14 ${
+                className={`h-9 w-9 flex-shrink-0 overflow-hidden border transition-all sm:h-14 sm:w-14 ${
                   i === index
                     ? "border-[#C2B280] opacity-100"
                     : "border-transparent opacity-30 hover:opacity-70"
