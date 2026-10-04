@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "Social Media Design",
     description:
       "A little corner where I turn things I love into visuals. Mostly fan edits, but also a playground for experimenting.",
-    tech: ["Canva"],
+    tech: ["Canva, Affinity"],
     aspect: "4/5", // portrait — feed IG
     gallery: [
       { type: "image", src: "/image/9.png" },
@@ -17,6 +17,7 @@ export const projects: Project[] = [
       { type: "image", src: "/image/14.png" },
       { type: "image", src: "/image/15.png" },
       { type: "image", src: "/image/16.png" },
+      { type: "image", src: "/image/Test.png" },
       { type: "image", src: "/image/Calum Hood.png" },
       { type: "image", src: "/image/CH bday design.png" },
       { type: "image", src: "/image/July 9, 2026 at 000 AM (1).png" },
@@ -108,6 +109,7 @@ export const projects: Project[] = [
     { type: "image", src: "/image/WhatsApp Image 2026-09-25 at 12.09.22 AM (1).jpeg" },
     { type: "image", src: "/image/WhatsApp Image 2026-09-25 at 12.09.22 AM.jpeg" },
     { type: "image", src: "/image/WhatsApp Image 2026-09-25 at 12.09.23 AM.jpeg" },
+    { type: "image", src: "/image/aadb211f-c11a-4ce4-aa2c-60b0512655be.jpg" },
     { type: "image", src: "/image/Untitled7_20251006085122.jpg" },
     { type: "image", src: "/image/BITE THE APPLE (2).png" },
   ],
