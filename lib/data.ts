@@ -24,8 +24,48 @@ export const projects: Project[] = [
       { type: "image", src: "/image/July 9, 2026 at 000 AM.png" },
       { 
   type: "video", 
-  src: "/video/1028-3.mp4", 
+  src: "/video/1028(3).mp4", 
   poster: "/image/Screenshot 2026-10-29 191321.png"
+},
+{
+  type: "video",
+  src: "/video/adding this artist to your personality immediately (11).mp4",
+  poster: "/image/Screenshot 2026-10-30 133706.png"
+},
+{
+  type: "video",
+  src: "/video/adding this artist to your personality immediately (4).mp4",
+  poster: "/image/Screenshot 2026-10-30 133717.png"
+},
+{
+  type: "video",
+  src: "/video/adding this artist to your personality immediately (6).mp4",
+  poster: "/image/Screenshot 2026-10-30 133735.png"
+},
+{
+  type: "video",
+  src: "/video/adding this artist to your personality immediately (5).mp4",
+  poster: "/image/Screenshot 2026-10-30 133727.png"
+},
+{
+  type: "video",
+  src: "/video/adding this artist to your personality immediately (7).mp4",
+  poster: "/image/Screenshot 2026-10-30 133748.png"
+},
+{
+  type: "video",
+  src: "/video/adding this artist to your personality immediately (8).mp4",
+  poster: "/image/Screenshot 2026-10-30 133758.png"
+},
+{
+  type: "video",
+  src: "/video/adding this artist to your personality immediately (9).mp4",
+  poster: "/image/Screenshot 2026-10-30 133805.png"
+},
+{
+  type: "video",
+  src: "/video/adding this artist to your personality immediately (10).mp4",
+  poster: "/image/Screenshot 2026-10-30 133814.png"
 },
     ],
   },
@@ -61,6 +101,11 @@ export const projects: Project[] = [
         type: "video",
         src: "/video/SaveClip.App_AQPtph8tmdWNvTTrkxE2lR17GotB3oN8GNYtKpyw4l3pxwxAYE_gl8X_F_wP0LzYy8OzFEGXMFEVjib8tpjMqrjvtJb0cxxlm9p4Jks.mp4",
         poster: "/image/Screenshot 2026-09-24 231547.png",
+      },
+      {
+        type: "video",
+        src: "/video/C H I L D H O O D (1).mp4",
+        poster: "/image/download (10).jpe",
       },
     ],
   },
@@ -133,7 +178,7 @@ export const projects: Project[] = [
   },*/
   {
     id: 5,
-    title: "Instagram Posts",
+    title: "Instagram Posts (Internship Postings)",
     description:
       "A few collection of Instagram post during my internship at Bingkai Karya, I created Instagram posts about music updates from both local and international artists. This project helped me strengthen my attention to detail",
     tech: ["Canva"],
@@ -183,7 +228,7 @@ export const projects: Project[] = [
   },
   {
   id: 6,
-  title: "Instagram Stories",
+  title: "Instagram Stories (Internship Postings)",
   description:
     "Created Instagram Stories as supporting content for Bingkai Karya’s music updates, featuring artist visuals with alternative headlines that remained connected to the main Instagram post. Each Story was designed to catch attention while directing audiences to the full article through a link.",
   tech: ["Canva"],
