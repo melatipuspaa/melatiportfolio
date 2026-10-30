@@ -22,6 +22,11 @@ export const projects: Project[] = [
       { type: "image", src: "/image/CH bday design.png" },
       { type: "image", src: "/image/July 9, 2026 at 000 AM (1).png" },
       { type: "image", src: "/image/July 9, 2026 at 000 AM.png" },
+      { 
+  type: "video", 
+  src: "/video/1028-3.mp4", 
+  poster: "/image/Screenshot 2026-10-29 191321.png"
+},
     ],
   },
   {
